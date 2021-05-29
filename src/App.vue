@@ -21,6 +21,9 @@ export default {
   },
   methods: {
     changeState(state) {
+      if (state === 0) {
+        this.email = "";
+      }
       this.state = state;
     },
   },
